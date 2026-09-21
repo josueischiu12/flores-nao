@@ -9,7 +9,9 @@
     "assets/flores/flor07.jpg",
     "assets/flores/flor08.jpg",
     "assets/flores/flor09.jpg",
-    "assets/flores/flor10.jpg"
+    "assets/flores/flor10.jpg",
+    "assets/flores/flor11.jpg",
+    "assets/flores/flor12.jpg"
   ];
 
   const track = document.getElementById("carouselTrack");
