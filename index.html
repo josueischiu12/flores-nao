@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#15110a">
+  <meta name="description" content="Un pequeño ramo digital para Nao, hecho con recuerdos y flores amarillas.">
+  <title>Para Nao 💛</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">21 · SEPTIEMBRE · 2026</p>
+        <h1>Para ti, <span>Nao</span></h1>
+        <p class="intro">Hoy quería darte flores amarillas. Esta vez no pude llevarte un ramo en las manos… así que hice uno para ti de otra manera.</p>
+      </div>
+
+      <div class="bouquet-wrap" aria-label="Animación de un ramo de flores amarillas">
+        <canvas id="bouquetCanvas"></canvas>
+        <div class="bouquet-caption">
+          <span>Un pequeño detalle hecho especialmente para ti</span>
+        </div>
+      </div>
+
+      <button class="scroll-hint" data-scroll="#recuerdos" aria-label="Bajar a los recuerdos">
+        <span class="scroll-arrow">↓</span>
+        <span>Sigue bajando</span>
+      </button>
+    </section>
+
+    <section class="section memories" id="recuerdos">
+      <div class="section-heading">
+        <p class="eyebrow">RECUERDOS</p>
+        <h2>Las flores que ya fueron parte de nuestra historia</h2>
+        <p>Algunas flores duran unos días. El recuerdo de haberlas entregado y verte recibirlas, mucho más.</p>
+      </div>
+
+      <div class="carousel" id="flowerCarousel">
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Flor anterior">‹</button>
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carouselTrack"></div>
+        </div>
+        <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente flor">›</button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots" aria-label="Seleccionar fotografía"></div>
+      <p class="swipe-note">Desliza las fotos con el dedo · Se mueven solas</p>
+    </section>
+
+    <section class="section video-section" id="video">
+      <div class="video-card">
+        <div class="section-heading compact">
+          <p class="eyebrow">ESE RECUERDO</p>
+          <h2>El ramo que te encantó</h2>
+          <p>Y este video que me mandaste también tenía que estar aquí.</p>
+        </div>
+
+        <div class="video-frame">
+          <video id="memoryVideo" controls playsinline preload="metadata">
+            <source src="assets/video/recuerdo.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+          <div class="video-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="carta">
+      <div class="letter">
+        <p class="eyebrow">PARA NAO</p>
+        <div class="letter-mark">✦</div>
+        <h2>Esta vez no pude comprarte flores.</h2>
+
+        <div class="letter-text">
+          <p>Quería darte flores amarillas este 21 de septiembre. Quería volver a entregarte un ramo, verte recibirlo y guardar otro de esos momentos que terminan convirtiéndose en recuerdos bonitos.</p>
+
+          <p>Pero esta vez no me alcanzó para comprarte el ramo que quería darte. Y sí, me duele no poder entregártelo hoy como hubiera querido.</p>
+
+          <p>Aun así, no quería dejar pasar este día sin darte aunque fuera un pequeño detalle.</p>
+
+          <p>Por eso hice este pequeño rincón para ti. Aquí están algunas de las flores que alguna vez te regalé, ese video que me mandaste y, al principio, un ramo que no se puede marchitar porque está hecho de píxeles… pero que hice pensando en ti.</p>
+
+          <p>Tal vez esta vez no tenga el aroma de unas flores de verdad, ni pueda ponerlas en tus manos. Pero quería que supieras que <strong>hoy también pensé en ti.</strong></p>
+
+          <p>Y cuando pueda volver a hacerlo, espero poder entregarte un ramo de verdad.</p>
+        </div>
+
+        <div class="signature">
+          <span>Con cariño,</span>
+          <strong>Josh</strong>
+          <span class="heart">💛</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-flower">✿</div>
+      <p>Hecho especialmente para Nao · 21 de septiembre de 2026</p>
+    </footer>
+  </main>
+
+  <script src="js/bouquet.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
