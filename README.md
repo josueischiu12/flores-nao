@@ -1,4 +1,4 @@
-# Flores amarillas para Nao 💛
+# Flores amarillas para Nao 🤍
 
 Página estática romántica para GitHub Pages.
 
